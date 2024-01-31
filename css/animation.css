@@ -1,0 +1,21 @@
+
+/* 아래에서 위로 올라가는 애니 */
+.am1{
+    transition: all .3s ease 0s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.am1.on{
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+/* 투명도만 바뀌는 */
+.am2{
+    transition: all .3s ease 0s;
+    opacity: 0;
+}
+.am2.on{
+    opacity: 1;
+}

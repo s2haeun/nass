@@ -1,0 +1,27 @@
+@media (min-width:0px) and (max-width:900px){
+    /* header */
+    .header_inner .header_menu .gnb{
+        display: none;
+    }
+    .header_inner .header_menu .open_menu{
+        display: flex;
+    }
+    .header_inner{
+        padding: 5px;
+    }
+
+    /* con2 */
+    .con2 .content_inner .nonsurgical {
+        flex-direction: column;
+    }
+
+
+    /* location */
+    .location .content_wrap {
+        flex-direction: column;
+    }
+    .location .location_txt{
+        padding-left: 0rem;
+        padding-top: 3rem;
+    }
+}
