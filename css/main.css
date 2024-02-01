@@ -462,11 +462,10 @@ header .header_inner{
     font-weight: 400;
 }
 
-/* test */
-/* .test{
-    height: 100vh;
-} */
+/* footer */
+
 footer{
-    background: #282828;
+    background: #303e48;
+    color: #fff;
     height: 100px;
 }
