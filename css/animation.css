@@ -1,4 +1,11 @@
-
+/* 투명도만 바뀌는데 한번만 실행되는 */
+.intro{
+    animation: fadein 2s  ease; 
+}
+@keyframes fadein{ 
+    0%{opacity: 0;} 
+    100%{opacity: 1;} 
+}
 /* 아래에서 위로 올라가는 애니 */
 .am1{
     transition: all .3s ease 0s;
@@ -13,9 +20,54 @@
 
 /* 투명도만 바뀌는 */
 .am2{
-    transition: all .3s ease 0s;
+    transition: all .5s ease 0s;
     opacity: 0;
 }
 .am2.on{
     opacity: 1;
+}
+
+/* 왼쪽에서 오른쪽으로 */
+.leftfadein{
+    transition: all .5s ease 0s;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.leftfadein.on{
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+
+/* 오른쪽에서 왼쪽으로 */
+.rightfadein{
+    transition: all .5s ease 0s;
+    transform: translateX(100px);
+    opacity: 0;
+}
+.rightfadein.on{
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+
+/* typing */
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+
+.typing {  
+    min-height: 7rem;
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+}
+
+.text_bold{
+  font-weight: 500;
 }

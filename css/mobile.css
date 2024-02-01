@@ -1,0 +1,39 @@
+@media (min-width:0px) and (max-width:500px){
+
+    * h3>span {
+        font-size: 1rem;
+    }
+    * h3>i {
+        font-size: 3.5rem;
+    }
+    /* main */
+    .main_banner .main_cover .intro{
+        font-size: 4.5rem;
+    }
+    /* con1 */
+    .con1 .content_inner .knowhow_txt {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .con1 .content_inner .open_txt {
+        font-size: 8rem;
+    }
+    .con1 i {
+        font-size: 2.2rem;
+    }
+    /* con2 */
+    .con2 .content_inner .content_wrap>h5>span {
+        font-size: 1.4rem;
+    }
+    .con2 .content_inner .content_wrap>h5>i {
+        font-size: 2.8rem;
+    }
+    /* location */
+    .location .location_txt .tel{
+        font-size: 1.8rem;
+    }
+    .location .location_txt ul>li {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}

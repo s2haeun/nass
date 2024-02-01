@@ -19,9 +19,16 @@
     /* location */
     .location .content_wrap {
         flex-direction: column;
+        padding: 0 2rem;
     }
     .location .location_txt{
         padding-left: 0rem;
         padding-top: 3rem;
     }
+
+
+
+
+
+
 }

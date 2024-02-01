@@ -157,9 +157,7 @@ header .header_inner{
     max-width: 1280px;
     width: 98%;
 }
-.h_logo{
-    /* width: 12rem; */
-}
+
 .header_menu{
     display: flex;
 }
@@ -242,14 +240,13 @@ header .header_inner{
     align-items: center;
 }
 .main_cover h1{
-    width: 260px;
+    max-width: 260px;
+    width: 50vw;
     margin-bottom: 5rem;
 }
 .main_cover p{
     font-size: 6.4rem;
     text-align: center;
-}
-.main_cover p i{
     font-weight: 300;
 }
 .main_cover p span{
@@ -360,11 +357,7 @@ header .header_inner{
 }
 .con3 .content_wrap{
     /* background: #fff; */
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
-.con3 .content_wrap:last-of-type{
-    /* margin-right: 0rem; */
+    margin: 1rem;
 }
 .con3 .content_wrap>h5{
     background-color: rgba(255,255,255,0.7);
