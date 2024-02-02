@@ -355,6 +355,7 @@ header .header_inner{
     object-fit: contain;
     transform: translate(-50%,-10%);
     z-index: 1;
+    filter: opacity(0.5);
 }
 .con3 .equipment>div{
     flex: 1;
