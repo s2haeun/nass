@@ -1,5 +1,5 @@
 @media (min-width:0px) and (max-width:500px){
-
+    .mobile{display: block;}
     * h3>span {
         font-size: 1rem;
     }
