@@ -10,6 +10,9 @@
     .main_banner .main_cover .intro{
         font-size: 4.5rem;
     }
+    .main_banner .main_cover .intro.one{
+        font-size: 2rem;
+    }
     /* con1 */
     .con1 .content_inner .knowhow_txt {
         font-size: 2rem;

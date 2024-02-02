@@ -252,7 +252,10 @@ header .header_inner{
 .main_cover p span{
     font-weight: 500;
 }
-
+.main_cover p.one{
+    margin-top: 30px;
+    font-size: 3rem;
+}
 /* con1 */
 .con1{
     width: 100%;
@@ -353,7 +356,7 @@ header .header_inner{
 }
 .con3 .equipment>div{
     flex: 1;
-    min-width: 246px;
+    min-width: 200px;
 }
 .con3 .content_wrap{
     /* background: #fff; */
@@ -366,12 +369,13 @@ header .header_inner{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7rem 0 25rem;
+    padding: 4rem 0 25rem;
     text-transform: uppercase;
 }
 .con3 .content_wrap>h5>span{
     font-size:2rem;
-    font-weight: 300;
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 .con3 .content_wrap>h5>i{
     font-size: 3rem;
