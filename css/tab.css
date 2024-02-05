@@ -26,16 +26,19 @@
         padding-top: 3rem;
     }
 
-    /* Introduction */
+    /* introduction */
     /* 진료철학 */
-    .Introduction_list .content_inner section{
+    .introduction_list .content_inner section{
         flex-direction: column;
     }
-    .Introduction_list .content_inner .con_wrap{
+    .introduction_list .content_inner .con_wrap{
         flex-direction: column;
     }
-    .Introduction_list .content_inner .txt_wrap{
-        /* margin: 5rem 0; */
+    main .content .name_wrap {
+        font-size: 2.6rem;
+        font-weight: 200;
+        letter-spacing: 4px;
+        line-height: 4.3rem;
     }
 
     /* 대표원장 소개 */

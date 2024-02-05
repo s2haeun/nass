@@ -3,6 +3,7 @@
     width: 100%;
     height: 600px;
     position: relative;
+    overflow: hidden;
 }
 .sub_banner .sub_banner_inner{
     height: 100%;
@@ -34,7 +35,7 @@
     0%{background-size: 150%;}
     100%{background-size: 130%;}
 }
-.sub_banner .Introduction_name{
+.sub_banner .introduction_name{
     /* box-sizing: border-box; */
     height: 100%;
     padding-top: 10rem;
@@ -50,7 +51,7 @@
     font-weight: 700;
 }
 
-.sub_banner .Introduction_name h2::after{
+.sub_banner .introduction_name h2::after{
     content: "";
     display: block;
     background: #fff;
@@ -58,7 +59,7 @@
     width: 90px;
     height: 4px;
 }
-.sub_banner .Introduction_name p{
+.sub_banner .introduction_name p{
     font-size: 1.8rem;
     font-weight: 300;
     text-align: center;
@@ -93,8 +94,8 @@
     font-weight: 700;
 }
 /* content */
-.Introduction_list>.content{display: none;}
-.Introduction_list>.content.on{display: block;}
+.introduction_list>.content{display: none;}
+.introduction_list>.content.on{display: block;}
 
 .content h4{
     font-size: 4.5rem;

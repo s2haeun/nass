@@ -47,18 +47,18 @@
     main .tab_list {
         font-size: 1.7rem;
     }
-    .sub_banner .Introduction_name h2{
+    .sub_banner .introduction_name h2{
         font-size: 4rem;
     }
     main .content h4 {
         font-size: 3rem;
     }
-    main .content .name_wrap {
+    /* main .content .name_wrap {
         font-size: 4.5rem;
         font-weight: 200;
         letter-spacing: 10px;
         line-height: 5.5rem;
-    }
+    } */
 
 
 
