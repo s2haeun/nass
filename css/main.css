@@ -307,17 +307,21 @@ header .header_inner{
     overflow: hidden;
     position: relative;
 }
-.content_wrap>img{
+.content_wrap:hover img{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.content_wrap img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(1);
     z-index: -1;
+    transition: all .5s ease;
 }
-.con2 .content_wrap>h5{
+.con2 .content_wrap h5{
     background-color: rgba(0,0,0,0.3);
     color: #fff;
     display: flex;
@@ -327,11 +331,11 @@ header .header_inner{
     padding: 7rem 0;
     text-transform: uppercase;
 }
-.con2 .content_wrap>h5>span{
+.con2 .content_wrap h5>span{
     font-size: 1.8rem;
     font-weight: 300;
 }
-.con2 .content_wrap>h5>i{
+.con2 .content_wrap h5>i{
     font-size: 4.5rem;
     font-weight: 700;
 }
@@ -353,19 +357,21 @@ header .header_inner{
 .con3 .equipment img{
     /* background-color: #fff; */
     object-fit: contain;
-    transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%) scale(1);
     z-index: 1;
     filter: opacity(0.5);
 }
-.con3 .equipment>div{
+.con3 .equipment div{
     flex: 1;
     min-width: 200px;
 }
 .con3 .content_wrap{
-    /* background: #fff; */
     margin: 1rem;
 }
-.con3 .content_wrap>h5{
+.con3 .content_wrap:hover img{
+    transform: translate(-50%,-10%) scale(1.1);
+}
+.con3 .content_wrap h5{
     background-color: rgba(255,255,255,0.7);
     /* color: #fff; */
     display: flex;
@@ -375,12 +381,12 @@ header .header_inner{
     padding: 4rem 0 25rem;
     text-transform: uppercase;
 }
-.con3 .content_wrap>h5>span{
+.con3 .content_wrap h5>span{
     font-size:2rem;
     font-weight: 400;
     margin-bottom: 2rem;
 }
-.con3 .content_wrap>h5>i{
+.con3 .content_wrap h5>i{
     font-size: 3rem;
     font-weight: 700;
 }
@@ -388,6 +394,13 @@ header .header_inner{
 .con4{
     background: url("../img/main_con4_bg.jpg")no-repeat center /cover;
     background-attachment:fixed;
+    /* animation: animatedBackground 3s;
+    animation-fill-mode: forwards;
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+@keyframes animatedBackground {
+    0%{background-size: 150%;}
+    100%{background-size: 130%;} */
 }
 .con4_filter{
     width: 100%;

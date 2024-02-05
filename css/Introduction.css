@@ -1,0 +1,225 @@
+/* 병원소개 */
+.sub_banner{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.sub_banner .sub_banner_inner{
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(7px);
+}
+.sub_banner::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #5a5a5a url(../img/main_bg.jpg) no-repeat center center;
+    background-size: cover;
+    animation: animatedBackground 3s;
+    animation-fill-mode: forwards;
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    /* z-index: -1; */
+}
+@keyframes animatedBackground {
+    0%{background-size: 150%;}
+    100%{background-size: 130%;}
+}
+.sub_banner .Introduction_name{
+    /* box-sizing: border-box; */
+    height: 100%;
+    padding-top: 10rem;
+    font-size: 6.0rem;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.sub_banner .Introduction_name h2::after{
+    content: "";
+    display: block;
+    background: #fff;
+    margin: 2rem auto 4rem;
+    width: 90px;
+    height: 4px;
+}
+.sub_banner .Introduction_name p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+/* tab_list */
+.tab_list{
+    background: #e3e3e3;
+    font-size: 2.1rem;
+}
+.tab_list_inner{
+    max-width: 1280px;
+    width: 98%;
+    margin:0 auto;
+}
+.tab_list_inner ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab_list_inner ul li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab_list_inner ul a{
+    line-height: 70px;
+}
+.tab_list_inner ul li.on{
+    background: #383838;
+    color: #fff;
+    font-weight: 700;
+}
+/* content */
+.Introduction_list>.content{display: none;}
+.Introduction_list>.content.on{display: block;}
+
+.content h4{
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 9rem;
+}
+.content section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+.content section>div{
+    flex: 1;
+    margin: 1rem;
+}
+.content .name_wrap{
+    font-size: 4.5rem;
+    font-weight: 200;
+    letter-spacing: 10px;
+    line-height: 5.5rem;
+}
+.circle{margin-top: -2rem;}
+.circle>*{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: -5px;
+}
+.circle>i{
+    background:#919191;
+}
+.circle>em{
+    background:#383838;
+}
+.content .name_p{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #747474;
+}
+.content .name_p p{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+/* con_wrap */
+.con_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con_wrap.right_img{
+    flex-direction: row-reverse;
+}
+.con_wrap img, .img_wrap{
+    line-height: 0;
+}
+.con_wrap>div{
+    flex: 1;
+}
+.con_wrap .img_wrap{
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+
+}
+
+.con_wrap .img_wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.con_wrap .txt_wrap{
+    /* margin: 2rem; */
+    color: #747474;
+    box-sizing: border-box;
+}
+.con_wrap .txt_wrap h6::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #b4d4ff;
+}
+.con_wrap .txt_wrap h6{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 2rem;
+}
+.con_wrap .txt_wrap p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 2rem;
+
+}
+/*  */
+.doctor_h4{
+    padding-top: 130px;
+    margin-bottom: 0rem;
+}
+.doctor_wrap.content_inner{
+    padding-bottom: 0;
+}
+.doctor{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.doctor::before {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 76%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #e3e3e3;
+    content: '';
+    border-radius: 0 550px 0 0;
+    z-index: -1;
+}
+.doctor_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.doctor_wrap>div{
+   flex: 1;
+}

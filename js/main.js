@@ -39,6 +39,27 @@ $(function(){
 
 
 
+    // 병원소개 tab
+    // let idx = 0
+    // $(".Introduction_ul>li").click(function(){
+    //     $(".Introduction_ul>li").removeClass("on")
+    //     $(this).addClass("on")
+    //     idx = $(this).index()
+    //     // 
+    //     $("Introduction_list>div").removeClass("on")
+    //     $("Introduction_list>div").eq(idx).addClass("on")
+
+    // })
+
+    // let idx = 0;
+    // $(".Introduction_ul>li").click(function(){
+    //     $(".Introduction_ul>li").removeClass("on")
+    //     $(this).addClass("on");
+    //     idx = $(this).index();
+    //     // 
+    //     $(".Introduction_list>div").removeClass("on")
+    //     $(".Introduction_list>div").eq(idx).addClass("on")
+    // });
 
 
 
@@ -49,19 +70,5 @@ $(function(){
 
 
 
-
-
-
-    // // con5 tabMenu
-    // function tabMenu5(dlClass,actName){
-    //     let dt5 = document.querySelectorAll(dlClass+">dt")
-    //     for(let i = 0 ; i<dt5.length ; i++){
-    //         dt5[i].addEventListener("click",function(){
-    //             for(let j = 0 ; j<dt5.length ; j++){
-    //                 dt5[j].classList.remove(actName)
-    //             }
-    //             this.classList.add(actName)
-    //         })
-    //     }
-    // }
+    
 });
