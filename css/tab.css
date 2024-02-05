@@ -26,8 +26,42 @@
         padding-top: 3rem;
     }
 
+    /* Introduction */
+    /* 진료철학 */
+    .Introduction_list .content_inner section{
+        flex-direction: column;
+    }
+    .Introduction_list .content_inner .con_wrap{
+        flex-direction: column;
+    }
+    .Introduction_list .content_inner .txt_wrap{
+        /* margin: 5rem 0; */
+    }
 
-
+    /* 대표원장 소개 */
+    .doctor::before {
+        border-radius: 0 50px 0 0!important;
+    }
+    .doctor .doctor_wrap{
+        flex-direction: column;
+    }
+    .doctor_wrap .img_wrap {
+        margin-right: 0rem!important;
+    }
+    .doctor_wrap .txt_wrap{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .doctor_wrap .txt_wrap p:first-of-type {
+        margin: 40px auto 40px!important;
+    }
+    .doctor_wrap .doctor_history {
+        margin-top: 2rem;
+    }
+    .doctor_wrap .txt_wrap p:last-of-type {
+        margin-bottom: 7rem;
+        
+    }
 
 
 
