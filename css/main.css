@@ -114,23 +114,38 @@ h3>i{
     display: block; /* on 클래스가 있는 메뉴의 하위 메뉴만 보여집니다. */
 }
 .hidden_bottom{
-    /* position: fixed; */
-    bottom: 0;
-    right: 0;
     background: #F5F5F5;
-    height: 20vh;
+    height: 28vh;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1.5rem 2rem;
 }
+.hidden_bottom .call{
+    width: 13px;
+    margin-right: 5px;
+} 
 .hidden_bottom a{
     color: rgb(52, 62, 71);
     font-weight: bold;
     font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
 }
-.hidden_bottom .time_table>div{
+.hidden_bottom .time_table{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #747474;
+}
+.hidden_bottom .time_table li{
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.hidden_bottom .time_table b{
+    width: 60px;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -549,7 +564,60 @@ header .header_inner{
 /* footer */
 
 footer{
-    background: #303e48;
+    background: #383838;
     color: #fff;
-    height: 100px;
+}
+.footer_inner{
+    padding: 80px 0;
+    margin:0 auto;
+    max-width: 1280px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_inner>div{flex: 1}
+.footer_left ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.f_top{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+}
+.f_top>li::after{
+    content: "•";
+    display: inline-block;
+    margin: 0 15px;
+}
+.f_top>li:last-of-type:after{
+    content: none;
+}
+.f_bot{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.f_bot>li{
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+}
+.f_bot>li span{
+    font-weight: 700;
+}
+.f_bot>li span::after{
+    content: ":";
+    display: inline-block;
+    margin: 0 7px;
+}
+.footer_left P{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.footer_right{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.footer_right .f_logo{
+    max-width: 300px;
 }

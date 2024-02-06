@@ -65,6 +65,11 @@
         margin-bottom: 7rem;
         
     }
+    /* 신경성형술 */
+    .introduction_list .con_wrap.pen{
+        flex-direction: column;
+    }
+
 
 
 
