@@ -62,13 +62,25 @@
     main .content h4 {
         font-size: 3rem;
     }
-    /* main .content .name_wrap {
-        font-size: 4.5rem;
-        font-weight: 200;
-        letter-spacing: 10px;
-        line-height: 5.5rem;
-    } */
+    /* news */
+    .news{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
 
+    /* footer */
+    .f_top{
+        font-size: 1.4rem;
+    }
+    .f_bot{
+        font-size: 1.2rem;
+    }
+    .footer_left P{
+        font-size: 1.2rem;
+    }
+    .f_logo{
+        margin-top: 5rem;
+    }
 
 
 

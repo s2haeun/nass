@@ -273,6 +273,13 @@ header .header_inner{
     margin-top: 30px;
     font-size: 3rem;
 }
+.introani{
+    animation: introanimation 1s forwards cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+@keyframes introanimation {
+    0%{opacity: 0;transform: scale(0.5);}
+    100%{opacity: 1;transform: scale(1);}
+}
 /* open */
 /* con1 */
 .con1{
@@ -571,7 +578,7 @@ footer{
     padding: 80px 0;
     margin:0 auto;
     max-width: 1280px;
-    width: 98%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -612,10 +619,11 @@ footer{
 .footer_left P{
     font-size: 1.6rem;
     font-weight: 300;
+    margin-top: 1.5rem;
 }
 .footer_right{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: end;
 }
 .footer_right .f_logo{

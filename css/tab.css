@@ -69,8 +69,18 @@
     .introduction_list .con_wrap.pen{
         flex-direction: column;
     }
-
-
+    /* news */
+    .news{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    /* footer */
+    .footer_inner{
+        flex-direction: column;
+    }
+    .f_logo{
+        margin-top: 10rem;
+    }
 
 
 }
