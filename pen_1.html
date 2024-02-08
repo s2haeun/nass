@@ -29,6 +29,9 @@
     <script src="./js/main.js"></script>
     <script src="./js/scrollEvent.js"></script>
     <script src="./js/typing.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -56,10 +59,10 @@
                         <li>
                             <a href="#">비수술 클리닉</a>
                             <ul class="left_0 top_0">
-                                <li><a href="#">무릎줄기세포주사</a></li>
-                                <li><a href="#">DNA 주사치료</a></li>
-                                <li><a href="#">프롤로주사</a></li>
-                                <li><a href="#">신경차단술</a></li>
+                                <li><a href="./nonsurgical_1.html">무릎줄기세포주사</a></li>
+                                <li><a href="./nonsurgical_2.html">DNA 주사치료</a></li>
+                                <li><a href="./nonsurgical_3.html">프롤로주사</a></li>
+                                <li><a href="./nonsurgical_4.html">신경차단술</a></li>
                             </ul>
                         </li>
                         <li>
@@ -128,12 +131,12 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">비수술 클리닉</a>
+                            <a href="./nonsurgical_1.html">비수술 클리닉</a>
                             <ul class="left_0">
-                                <li><a href="#">무릎줄기세포주사</a></li>
-                                <li><a href="#">DNA 주사치료</a></li>
-                                <li><a href="#">프롤로주사</a></li>
-                                <li><a href="#">신경차단술</a></li>
+                                <li><a href="./nonsurgical_1.html">무릎줄기세포주사</a></li>
+                                <li><a href="./nonsurgical_2.html">DNA 주사치료</a></li>
+                                <li><a href="./nonsurgical_3.html">프롤로주사</a></li>
+                                <li><a href="./nonsurgical_4.html">신경차단술</a></li>
                             </ul>
                         </li>
                         <li>
@@ -188,18 +191,14 @@
                     </div>
                     <div class="bg_wrap bluebg">
                         <div class="inner">
-                            <div class="pen con_wrap am1">
+                            <div class="pen con_wrap" data-aos="fade-up">
                                 <div class="img_wrap">
                                     <img src="./img/introduction_1.jpg" alt="신경성형술 (PEN)">
                                 </div>
                                 <div class="txt_wrap">
                                     <h6>신경성형술 (PEN)</h6>
                                     <p>
-                                        척추신경 주위에 조직 증식 현상으로 유착 현상이 나타날 때 직경
-                                        1mm 정도의 특수 기능 카테터를 이용하여 척추신경 주위의
-                                        불필요한 부위를 기계적, 화학적인 방법으로 박리하여 유착을
-                                        풀어주고 염증에는 약물을 주사하여 통증을 감소시키는 비수술적
-                                        치료방법 입니다. 
+                                        척추신경 주위에 조직 증식 현상으로 유착 현상이 나타날 때 직경 1mm 정도의 특수 기능 카테터를 이용하여 척추신경 주위의 불필요한 부위를 기계적, 화학적인 방법으로 박리하여 유착을 풀어주고 염증에는 약물을 주사하여 통증을 감소시키는 비수술적 치료방법 입니다. 
                                     </p>
                                 </div>
                             </div>
@@ -207,7 +206,7 @@
                     </div>
                     <div class="bg_wrap">
                         <div class="inner">
-                            <div class="pen con_wrap right_img  am1">
+                            <div class="pen con_wrap right_img" data-aos="fade-up">
                                 <div class="img_wrap">
                                     <img src="./img/introduction_2.jpg" alt="신경성형술 치료 대상">
                                 </div>
@@ -225,7 +224,7 @@
                     </div>
                     <div class="bg_wrap">
                         <div class="inner">
-                            <div class="pen con_wrap am1">
+                            <div class="pen con_wrap"  data-aos="fade-up">
                                 <div class="img_wrap">
                                     <img src="./img/introduction_3.jpg" alt="시술 후 주의사항">
                                 </div>
@@ -240,11 +239,6 @@
                             </div>
                         </div>
                     </div>
-
-                        
-
-
-                    
                 </div>
             </div>
             
@@ -280,5 +274,11 @@
             </div>
         </footer>
     </div>
+    <!-- aos -->
+    <script>
+        AOS.init({ 
+            duration:1000
+         });
+    </script>
 </body>
 </html>

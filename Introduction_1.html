@@ -28,6 +28,9 @@
     <script src="./js/main.js"></script>
     <script src="./js/scrollEvent.js"></script>
     <script src="./js/typing.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -55,10 +58,10 @@
                         <li>
                             <a href="#">비수술 클리닉</a>
                             <ul class="left_0 top_0">
-                                <li><a href="#">무릎줄기세포주사</a></li>
-                                <li><a href="#">DNA 주사치료</a></li>
-                                <li><a href="#">프롤로주사</a></li>
-                                <li><a href="#">신경차단술</a></li>
+                                <li><a href="./nonsurgical_1.html">무릎줄기세포주사</a></li>
+                                <li><a href="./nonsurgical_2.html">DNA 주사치료</a></li>
+                                <li><a href="./nonsurgical_3.html">프롤로주사</a></li>
+                                <li><a href="./nonsurgical_4.html">신경차단술</a></li>
                             </ul>
                         </li>
                         <li>
@@ -127,12 +130,12 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">비수술 클리닉</a>
+                            <a href="./nonsurgical_1.html">비수술 클리닉</a>
                             <ul class="left_0">
-                                <li><a href="#">무릎줄기세포주사</a></li>
-                                <li><a href="#">DNA 주사치료</a></li>
-                                <li><a href="#">프롤로주사</a></li>
-                                <li><a href="#">신경차단술</a></li>
+                                <li><a href="./nonsurgical_1.html">무릎줄기세포주사</a></li>
+                                <li><a href="./nonsurgical_2.html">DNA 주사치료</a></li>
+                                <li><a href="./nonsurgical_3.html">프롤로주사</a></li>
+                                <li><a href="./nonsurgical_4.html">신경차단술</a></li>
                             </ul>
                         </li>
                         <li>
@@ -201,7 +204,7 @@
                                 </p>
                             </div>
                         </section>
-                        <div class="con_wrap am1">
+                        <div class="con_wrap " data-aos="fade-up">
                             <div class="img_wrap">
                                 <img src="./img/introduction_1.jpg" alt="환자 중심의 진료 추구">
                             </div>
@@ -213,7 +216,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="con_wrap right_img  am1">
+                        <div class="con_wrap right_img" data-aos="fade-up">
                             <div class="img_wrap">
                                 <img src="./img/introduction_2.jpg" alt="스마트한 치료시스템">
                             </div>
@@ -226,7 +229,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="con_wrap am1">
+                        <div class="con_wrap" data-aos="fade-up">
                             <div class="img_wrap">
                                 <img src="./img/introduction_3.jpg" alt="포스트 치료 지원">
                             </div>
@@ -275,5 +278,11 @@
             </div>
         </footer>
     </div>
+    <!-- aos -->
+    <script>
+        AOS.init({ 
+            duration:1000
+         });
+    </script>
 </body>
 </html>

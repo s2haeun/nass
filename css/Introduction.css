@@ -89,6 +89,7 @@
     min-width: 200px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .tab_list_inner ul li.on{
     background: #383838;
@@ -276,7 +277,7 @@
 .txt_wrap p:last-of-type{
     margin-top: 4rem;
     font-size:2.1rem ;
-    line-height: 2.3rem;
+    line-height: 3.9rem;
 }
 /* 신경성형술 */
 .pen.con_wrap{
@@ -419,4 +420,40 @@
     height: 2px;
     background: #5a5a5a;
     transition: all .5s ease 0s;
+}
+
+/* 비수술클리닉 */
+/* DNA주사치료 */
+.dna_em{
+    display: block;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin: 1rem 2rem;
+}
+.inner .txt_wrap .dna_ul{
+    margin: 2rem;
+}
+.inner .txt_wrap .dna_ul li::before{
+    content: none;
+}
+.inner .txt_wrap .dna_ul li{
+    display: block;
+}
+.inner .txt_wrap .dna_ul li b{
+    display: block;
+    font-weight: 700;
+}
+
+/* 프롤로주사 */
+.bg_wrap.bluebg_72::before{
+    height: 72%;
+}
+.txt_wrap p>.pointbold{
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1rem;
+}
+/* 신경차단술 */
+.con_wrap .img_wrap.heightAuto {
+    height: auto;
 }

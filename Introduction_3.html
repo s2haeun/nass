@@ -28,6 +28,9 @@
     <script src="./js/main.js"></script>
     <script src="./js/scrollEvent.js"></script>
     <script src="./js/typing.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -55,10 +58,10 @@
                         <li>
                             <a href="#">비수술 클리닉</a>
                             <ul class="left_0 top_0">
-                                <li><a href="#">무릎줄기세포주사</a></li>
-                                <li><a href="#">DNA 주사치료</a></li>
-                                <li><a href="#">프롤로주사</a></li>
-                                <li><a href="#">신경차단술</a></li>
+                                <li><a href="./nonsurgical_1.html">무릎줄기세포주사</a></li>
+                                <li><a href="./nonsurgical_2.html">DNA 주사치료</a></li>
+                                <li><a href="./nonsurgical_3.html">프롤로주사</a></li>
+                                <li><a href="./nonsurgical_4.html">신경차단술</a></li>
                             </ul>
                         </li>
                         <li>
@@ -127,12 +130,12 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">비수술 클리닉</a>
+                            <a href="./nonsurgical_1.html">비수술 클리닉</a>
                             <ul class="left_0">
-                                <li><a href="#">무릎줄기세포주사</a></li>
-                                <li><a href="#">DNA 주사치료</a></li>
-                                <li><a href="#">프롤로주사</a></li>
-                                <li><a href="#">신경차단술</a></li>
+                                <li><a href="./nonsurgical_1.html">무릎줄기세포주사</a></li>
+                                <li><a href="./nonsurgical_2.html">DNA 주사치료</a></li>
+                                <li><a href="./nonsurgical_3.html">프롤로주사</a></li>
+                                <li><a href="./nonsurgical_4.html">신경차단술</a></li>
                             </ul>
                         </li>
                         <li>
@@ -187,7 +190,7 @@
                         <h4>진료시간 및 오시는 길</h4>
                         <div class="location">
                             <div class="content_wrap">
-                                <div class="location_img leftfadein">
+                                <div class="location_img"  data-aos="fade-up-right">
                                     <!-- * 카카오맵 - 지도퍼가기 -->
                                 <!-- 1. 지도 노드 -->
                                 <div id="daumRoughmapContainer1707265854776" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
@@ -208,7 +211,7 @@
                                     }).render();
                                 </script>
                                 </div>
-                                <div class="location_txt rightfadein">
+                                <div class="location_txt"  data-aos="fade-up-left">
                                     <div class="tel"><b>TEL.</b><span>02.0000.0000</span></div>
                                     <hr>
                                     <h6>진료시간</h6>
@@ -269,5 +272,11 @@
             </div>
         </footer>
     </div>
+    <!-- aos -->
+    <script>
+        AOS.init({ 
+            duration:1000
+         });
+    </script>
 </body>
 </html>
