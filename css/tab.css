@@ -10,9 +10,19 @@
         padding: 5px;
     }
 
+    /* common */
+    .bg_wrap.bluebg::before {
+        display: none;
+    }
     /* con2 */
     .con2 .content_inner .nonsurgical {
         flex-direction: column;
+    }
+    /* sub_banner */
+    .sub_banner{height: 400px!important}
+    @keyframes animatedBackground {
+        0%{background-size: 220%;}
+        100%{background-size: 200%;}
     }
 
 
@@ -77,6 +87,7 @@
     /* footer */
     .footer_inner{
         flex-direction: column;
+        padding: 5rem 0;
     }
     .f_logo{
         margin-top: 10rem;

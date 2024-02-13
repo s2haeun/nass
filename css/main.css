@@ -120,6 +120,12 @@ h3>i{
     box-sizing: border-box;
     padding: 1.5rem 2rem;
 }
+.hidden_bottom>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
 .hidden_bottom .call{
     width: 13px;
     margin-right: 5px;

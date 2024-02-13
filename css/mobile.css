@@ -9,15 +9,33 @@
     * h3>i {
         font-size: 3.5rem;
     }
+
+    /* common */
+    .content_inner{
+        padding: 70px 0;
+      
+    }
+    .content h4 {
+        margin-bottom: 5rem;
+    }
+    .con_wrap .txt_wrap h6 {
+        margin: 5rem 2rem 2rem;
+    }
+    .txt_wrap p:last-of-type {
+        margin-top: 2rem;
+    }
+    .bg_wrap.bluebg::before {
+        display: none;
+    }
     /* main */
     .main_banner .main_cover h1 {
         margin-bottom: 3rem ;
         margin-top: 6rem;
     }
-    .main_banner .main_cover .intro{
+    .main_banner .main_cover .introani{
         font-size: 4rem;
     }
-    .main_banner .main_cover .intro.one{
+    .main_banner .main_cover .introani.one{
         font-size: 1.6rem;
     }
     /* con1 */
@@ -46,8 +64,16 @@
     .location .location_txt ul>li {
         flex-direction: column;
         margin-bottom: 2rem;
+        line-height: 1.5rem;
     }
-
+    /* 대표원장소개 */
+    .doctor::before {
+        height: 80%;
+    }
+    .content .doctor_h4 {
+        padding-top: 80px;
+        margin-bottom: 5rem;
+    }
     /* 병원소개 */
     .tab_list .tab_list_inner ul a {
         line-height: 50px;
@@ -67,7 +93,23 @@
         grid-template-columns: repeat(1, 1fr);
     
     }
+    /* 입원실 */
+    .exploration2 h6{
+        font-size: 2.5rem;
+        padding-left: 0.5rem;
 
+    }
+    .exploration2 dl dt{
+        line-height: 4.5rem;
+        font-size: 2.5rem;
+        padding-left: 1.5rem;
+
+    }
+    .exploration2 dl dd{
+        line-height: 2.7rem;
+        font-size: 2rem;
+        padding: 1.5rem 1rem 3.5rem;
+    }
     /* footer */
     .f_top{
         font-size: 1.4rem;
