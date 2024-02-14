@@ -18,6 +18,13 @@
     .con2 .content_inner .nonsurgical {
         flex-direction: column;
     }
+    /* main 보유장비 */
+    .con3 .equipment img {
+        transform: translate(-50%,-10%) scale(1);
+    }
+    .con3 .content_wrap:hover img {
+        transform: translate(-50%,-10%) scale(1.1);
+    }
     /* sub_banner */
     .sub_banner{height: 400px!important}
     @keyframes animatedBackground {
@@ -84,6 +91,14 @@
         grid-template-columns: repeat(2, 1fr);
     
     }
+    /* 보유장비 */
+    /* .introduction_list .con_wrap.pen {
+        flex-direction: column;
+    } */
+    .smartct_ul{
+        flex-direction: column;
+    }
+
     /* footer */
     .footer_inner{
         flex-direction: column;

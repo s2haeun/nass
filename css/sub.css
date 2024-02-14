@@ -213,7 +213,7 @@
     display: block;
     overflow: hidden;
     width: 100%;
-    height: 60%;
+    height: 69%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -233,6 +233,9 @@
    margin-right: 5rem;
    display: flex;
     align-items: flex-end;
+}
+.doctor_wrap .img_wrap img{
+    filter: grayscale(0.2);
 }
 
 .doctor_wrap .txt_wrap{
@@ -453,6 +456,7 @@
 .bg_wrap.bluebg_72::before{
     height: 72%;
 }
+
 .txt_wrap p>.pointbold{
     font-weight: 700;
     display: block;
@@ -509,4 +513,44 @@
     font-size: 3rem;
     font-weight: 300;
     padding: 1.5rem 2.5rem 3.5rem;
+}
+/* 보유장비 */
+.smartct_ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    /* flex-wrap: wrap; */
+}
+.txt_wrap ul.smartct_ul li::before{
+    content: none;
+}
+.smartct_ul li{
+    display: flex;
+    align-items: center;
+    border: 1px dotted #3838388d;
+    padding: 3rem 2rem;
+    flex-grow: 1;
+}
+.smartct_ul li em{
+    flex-shrink: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 900;
+    background: #b4d4ff;
+    margin-right: 1rem;
+    line-height: 0;
+}
+.smartct_ul li b{
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+}
+.bg_wrap.bluebg_70::before{
+    height: 70%;
 }
