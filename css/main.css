@@ -154,13 +154,11 @@ h3>i{
     display: flex;
     justify-content: space-between;
 }
-
 /* header */
 header{
     width: 100%;
     background: #fff;
     font-size: 1.6rem;
-    /* border-bottom: 1px solid lime; */
     position: fixed;
     padding: 2rem 0;
     transition: all .5s ease ;
@@ -179,7 +177,6 @@ header .header_inner{
     max-width: 1280px;
     width: 98%;
 }
-
 .header_menu{
     display: flex;
 }
@@ -214,7 +211,6 @@ header .header_inner{
     pointer-events: none;
     position: absolute;
     top: 5.7rem;
-    /* border: 1px solid pink; */
     padding: 2rem;
     background: #fff;
     box-shadow: 0 19px 35px rgba(0,0,0,0.11);
@@ -240,16 +236,12 @@ header .header_inner{
     display: none;
     padding-left: 50px;
     cursor: pointer;
-    /* display: flex; */
     align-items: center;
 }
-
-
 /* banner */
 .main_banner{
     height: 100vh;
     width: 100%;
-    /* background-image: url(../img/BG-1.jpg); */
     background: url(../img/main_bg.jpg) no-repeat center /cover;
 }
 .main_cover{
@@ -290,7 +282,6 @@ header .header_inner{
 /* con1 */
 .con1{
     width: 100%;
-    /* height: ; */
     background: #303e48;
     color: #fff;
     text-align: center;
@@ -300,7 +291,6 @@ header .header_inner{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .con1 .knowhow_txt{
     font-size: 3.5rem;
@@ -376,7 +366,6 @@ header .header_inner{
     background: #d5d5d5;
     position: relative;
 }
-
 /* 비수술클리닉 */
 /* con2 이미지링크*/
 .con2{
@@ -427,23 +416,17 @@ header .header_inner{
     font-size: 4.5rem;
     font-weight: 700;
 }
-
 /* con3 */
 .con3{
     width: 100%;
     background: #e5e5e5;
-    /* position: relative;
-    z-index: -1; */
 }
 .con3 .equipment{
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* background: #fff; */
 }
 .con3 .equipment img{
-    /* background-color: #fff; */
     object-fit: contain;
     transform: translate(-50%,-20%) scale(1);
     z-index: 1;
@@ -491,6 +474,7 @@ header .header_inner{
     background: rgba(52, 62, 71, 0.7);
     backdrop-filter: blur(7px);
 }
+
 
 .con4 .content_inner>div{
     display: flex;

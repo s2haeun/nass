@@ -92,9 +92,6 @@
     
     }
     /* 보유장비 */
-    /* .introduction_list .con_wrap.pen {
-        flex-direction: column;
-    } */
     .smartct_ul{
         flex-direction: column;
     }

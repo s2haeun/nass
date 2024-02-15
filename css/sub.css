@@ -8,14 +8,9 @@
 .sub_banner .sub_banner_inner{
     height: 100%;
     width: 100%;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     position: relative;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(7px);
+    /* backdrop-filter: blur(7px); 호환성문제*/
 }
 .sub_banner::before{
     content: '';
@@ -26,29 +21,26 @@
     height: 100%;
     background: #d6d6d6 url(../img/main_bg.jpg) no-repeat center center;
     background-size: cover;
+    filter: blur(7px);
     animation: animatedBackground 3s forwards cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    /* z-index: -1; */
 }
 @keyframes animatedBackground {
     0%{background-size: 150%;}
     100%{background-size: 130%;}
 }
 .sub_banner .introduction_name{
-    /* box-sizing: border-box; */
     height: 100%;
     padding-top: 10rem;
     font-size: 6.0rem;
     color: #fff;
     position: relative;
     z-index: 2;
-    /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 700;
 }
-
 .sub_banner .introduction_name h2::after{
     content: "";
     display: block;
@@ -99,7 +91,6 @@
 /* content */
 .introduction_list>.content{display: none;}
 .introduction_list>.content.on{display: block;}
-
 .content h4{
     font-size: 4.5rem;
     font-weight: 700;
@@ -164,16 +155,13 @@
     width: 100%;
     /* height: 350px; */
     box-sizing: border-box;
-
 }
-
 .con_wrap .img_wrap img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .con_wrap .txt_wrap{
-    /* margin: 2rem; */
     color: #747474;
     box-sizing: border-box;
 }
@@ -193,9 +181,8 @@
     font-size: 1.8rem;
     font-weight: 400;
     margin: 2rem;
-
 }
-/*  */
+/* 의료진소개 */
 .content .doctor_h4{
     padding-top: 130px;
     margin-bottom: 0rem;
@@ -237,7 +224,6 @@
 .doctor_wrap .img_wrap img{
     filter: grayscale(0.2);
 }
-
 .doctor_wrap .txt_wrap{
     padding-bottom: 5rem;
 }
@@ -328,26 +314,17 @@
     left: 0;
     background: #b4d4ff;
     content: '';
-    /* border-radius: 0 550px 0 0; */
     z-index: -1;
 }
-
 /* news */
 .news{
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
 .news li{
     flex-grow: 1;
     margin: 1rem;
-    /* position: relative; */
-    /* min-width: 260px; */
-    /* width: 30%; */
 }
 .news li>a{
     display: flex;
@@ -364,8 +341,6 @@
 .news li img{
     width: 100%;
     height: 100%;
-    /* height: 400px; */
-    /* aspect-ratio: auto 1 / 1; */
     object-fit: cover;
     line-height: 0;
     filter: grayscale(0.8);
@@ -392,12 +367,8 @@
     display: inline-block;
     font-size: 2rem;
     padding: 0.5rem 1rem;
-    /* margin-top: 2px;
-    margin-left: 2px; */
 }
 .news li:hover .newsTxt em{
-    /* color: #5a5a5a;
-    background: #fff; */
     border-bottom: 2px solid #fff;
 }
 .news li span{
@@ -412,7 +383,6 @@
     color: #fff;
 }
 .news li .newsTxt{
-    /* padding: 10px; */
     padding-bottom: 20px;
     transition: all .5s ease 0s;
     position: relative;
@@ -429,7 +399,6 @@
     background: #5a5a5a;
     transition: all .5s ease 0s;
 }
-
 /* 비수술클리닉 */
 /* DNA주사치료 */
 .dna_em{
@@ -451,12 +420,10 @@
     display: block;
     font-weight: 700;
 }
-
 /* 프롤로주사 */
 .bg_wrap.bluebg_72::before{
     height: 72%;
 }
-
 .txt_wrap p>.pointbold{
     font-weight: 700;
     display: block;
@@ -466,13 +433,10 @@
 .con_wrap .img_wrap.heightAuto {
     height: auto;
 }
-
 .bg_wrap:last-of-type{
     margin-bottom: 20rem;
 }
-
 /* 입원실 */
-
 .exploration2 .exploration2_img_wrap{
     max-height: 500px;
     overflow: hidden;
@@ -519,7 +483,6 @@
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    /* flex-wrap: wrap; */
 }
 .txt_wrap ul.smartct_ul li::before{
     content: none;
