@@ -18,6 +18,10 @@
     .con2 .content_inner .nonsurgical {
         flex-direction: column;
     }
+    /* main 주요시술 */
+    .con6 .content_inner .nonsurgical {
+        flex-direction: column;
+    }
     /* main 보유장비 */
     .con3 .equipment img {
         transform: translate(-50%,-10%) scale(1);

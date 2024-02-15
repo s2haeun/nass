@@ -312,6 +312,8 @@ header .header_inner{
 /* con5 */
 .con5{
     background: #e5e5e5;
+    width: 100%;
+
 }
 .con5 h3 i em{
     color: #5384c7;
@@ -365,6 +367,40 @@ header .header_inner{
     overflow: hidden;
     background: #d5d5d5;
     position: relative;
+}
+/* 주요시술 */
+/* con6 */
+.con6{
+    background: #303e48;
+    color: #fff;
+}
+.con6 h3>i {
+    color: #fff;
+}
+.con6 .nonsurgical{
+    display: flex;
+}
+.con6 .nonsurgical .content_wrap{
+    flex: 1;
+    margin: 1rem;
+}
+.con6 .content_wrap h5{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+    text-transform: uppercase;
+}
+.con6 .content_wrap h5>span{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.con6 .content_wrap h5>i{
+    font-size: 4.5rem;
+    font-weight: 700;
 }
 /* 비수술클리닉 */
 /* con2 이미지링크*/

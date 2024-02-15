@@ -177,6 +177,13 @@
                     </div>
                 </div>
             </div>
+            <script>
+                window.addEventListener('scroll', function() {
+                    var scrollPosition = window.scrollY;
+                    var bgPosition = 'center ' + (-scrollPosition / 2) + 'px'; // 배경 이미지 위치 계산
+                    document.querySelector('.sub_banner').style.backgroundPosition = bgPosition;
+                });
+            </script>
             <!-- tab -->
             <div class="tab_list">
                 <div class="tab_list_inner">
