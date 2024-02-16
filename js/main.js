@@ -17,6 +17,7 @@ $(function(){
 
     // 모바일 메뉴 열기
     $(".open_menu").click(function(){
+        // alert("!!")
         $(".hidden_bg").addClass("on");
     })
     // 모바일 메뉴 닫기

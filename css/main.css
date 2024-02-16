@@ -599,7 +599,7 @@ footer{
 }
 .f_top{
     /* 일단 안보이게 임시 */
-    display: none!important;
+    /* display: none!important; */
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 3.5rem;
