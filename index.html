@@ -29,29 +29,79 @@
     <script src="./js/main.js"></script>
     <script src="./js/scrollEvent.js"></script>
     <script src="./js/typing.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/popup.js"></script>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrap">
         <div id="header-placeholder"></div>
-        
+        <!-- 팝업 -->
+        <div id="popup_0" class="popup_wrap popup_num" style="display: none;">
+            <div class="popup">
+                <a id="popup_link" href="#">
+                    <img id="popup_image" src="./img/popup_1.jpg">
+                </a>
+            </div>
+            <div class="popup_foot">
+                <div>
+                    <label for="chkbox0">
+                        <span>
+                            <input type="checkbox" value="checkbox" name="chkbox0" id="chkbox0">
+                            오늘 하루동안 보지 않기
+                        </span>
+                    </label>
+                    <span class="popup_close">닫기 X</span>
+                </div>
+            </div>
+        </div>
         <main>
             <!-- 메인배너 -->
-            <div class="main_banner">
-                <div class="main_cover">
-                    <h1><img src="./img/main_bg_logo.png" alt="나스정형외과 로고"></h1>
-                    <p class="introani">
-                        <i>검사부터 치료까지</i>
-                        <span>원스톱치료</span>
-                    </p>
-                    <p class="one introani">
-                        <span> 10년 이상 척추 / 어깨 관절을 치료한<br class="mobile"> 서울대 교수 출신</span>의<br>
-                        척추 분과 전문의가  여러분의 검사부터 치료까지<br>
-                        원스톱으로치료합니다.
-                    </p>
-                </div>
+            <div class="main_station swiper">
+                <ul class="swiper-wrapper train">
+                    <li class="swiper-slide train_item">
+                        <div class="main_banner">
+                            <div class="main_cover">
+                                <h1><img src="./img/main_bg_logo.png" alt="나스정형외과 로고"></h1>
+                                <p class="introani">
+                                    <i>검사부터 치료까지</i>
+                                    <span>원스톱치료</span>
+                                </p>
+                                <p class="one introani">
+                                    <span> 10년 이상 척추 / 어깨 관절을 치료한<br class="mobile"> 서울대 교수 출신</span>의<br>
+                                    척추 분과 전문의가  여러분의 검사부터 치료까지<br>
+                                    원스톱으로치료합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide train_item">
+                        <div class="main_banner">
+                            <div class="main_cover">
+                                <h1><img src="./img/main_bg_logo.png" alt="나스정형외과 로고"></h1>
+                                <p class="introani">
+                                    <i>검사부터 치료까지</i>
+                                    <span>원스톱치료</span>
+                                </p>
+                                <p class="one introani">
+                                    <span> 10년 이상 척추 / 어깨 관절을 치료한<br class="mobile"> 서울대 교수 출신</span>의<br>
+                                    척추 분과 전문의가  여러분의 검사부터 치료까지<br>
+                                    원스톱으로치료합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
             </div>
             <!-- open -->
             <div class="con1">
@@ -209,17 +259,6 @@
                                 </h5>
                             </a>
                         </div>
-                        <div class="content_wrap"  data-aos='fade-up'>
-                            <a href="./nonsurgical_1.html">
-                                <img src="./img/nonsurgical_01.jpg" alt="무릎줄기세포주사">
-                                <h5>
-                                    <span>stem cell therapy</span>
-                                    <i>무릎줄기세포주사</i>
-                                </h5>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nonsurgical" >
                         <div class="content_wrap  am1" data-aos='fade-up'>
                             <a href="./nonsurgical_2.html">
                                 <img src="./img/nonsurgical_02.jpg" alt="DNA 주사치료">

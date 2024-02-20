@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Title" content="나스정형외과 ㅣ동작 이수 정형외과">
+    <meta name="Description" content="이수역 정형외과 전문의, 비수술 치료, 주사치료">
+    <meta name="Location" content="서울 동작구 동작대로 137">
+    <link rel="canonical" href="http://www.orthopediclinic.com">
+    <meta property="og:title" content="나스정형외과 ㅣ동작 이수 정형외과">
+    <meta property="og:description" content="이수역 정형외과 전문의, 비수술 치료, 주사치료">
+    <meta property="og:url" content="http://www.orthopediclinic.com">
+    <meta name="keywords" content="이수역 정형외과 전문의, 비수술 치료, 주사치료">
+    <meta property="og:image" content="./img/thum.png">
+    <!-- 네이버 -->
+    <meta name="naver-site-verification" content="31772ccf1a6a8801e348ce7d9ebba252d9f2f94e" />
+    <title>나스정형외과 이메일무단수집거부</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/scrollEvent.js"></script>
+    <script src="./js/typing.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header-placeholder"></div>
+        <main>
+            <!-- 서브배너 -->
+            <div class="sub_banner">
+                <div class="sub_banner_inner">
+                    <div class="introduction_name">
+                        <h2>사이트 이용안내</h2>
+                        <p>풍부한 경험과 노하우로 환자분의 치료부터 관리까지 책임집니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- tab -->
+            <div class="tab_list">
+                <div class="tab_list_inner">
+                    <ul class="introduction_ul">
+                        <li ><a href="./site_1.html">개인정보처리방침</a></li>
+                        <li ><a href="./site_2.html">이용약관</a></li>
+                        <li class="on"><a href="./site_3.html">이메일무단수집거부</a></li>
+                        <!-- <li ><a href="./site_2.html">이용약관</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="introduction_list">
+                <div class="content on">
+                    <div class="content_inner">
+                        <h4>이메일무단수집거부</h4>
+                        <div class="email">
+                            <div class="email_tit">
+                                나스정형외과 웹사이트는<br>
+                                이메일 주소 수집을 거부합니다.
+                            </div>
+                            <p class="email_msg">
+                                본 홈페이지에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 형사처벌됨을 유념하시기 바랍니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <div id="footer-placeholder"></div>
+       
+    </div>
+    <script>
+        // aos 초기화
+        AOS.init({ 
+            duration: 1000
+        });
+    
+        // 헤더와 푸터를 가져와서 각각의 placeholder에 삽입합니다.
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+    
+                // 헤더를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
+                // 예시: 메뉴 토글 등의 기능 초기화
+                // 모바일 메뉴 열기
+                $(".open_menu").click(function(){
+                    // alert("!!")
+                    $(".hidden_bg").addClass("on");
+                })
+                // 모바일 메뉴 닫기
+                $(".close_menu").click(function(){
+                    $(".hidden_bg").removeClass("on");
+                })
+
+                // 모바일 메뉴 토글
+                $(".hidden_gnb>li").click(function() {
+                    // 클릭된 메뉴의 하위 메뉴 토글
+                    $(this).find('.top_0').slideToggle();
+
+                    // 다른 메뉴의 하위 메뉴 닫기
+                    $(".hidden_gnb>li").not(this).find('.top_0').slideUp();
+                    // 
+                    $(".hidden_gnb>li>a").removeClass("on")
+                    $(this).children('a').addClass("on");
+
+                });
+            });
+    
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+    
+                // 푸터를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
+                // 예시: 스크롤 이벤트 등의 기능 초기화
+                window.addEventListener('scroll', function() {
+                    console.log('스크롤 이벤트 발생');
+                });
+            });
+    </script>
+</body>
+</html>
