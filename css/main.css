@@ -675,6 +675,31 @@ header .header_inner{
     overflow: hidden;
     font-size: 1.9rem;
 }
+
+/* 비급여 */
+/*  */
+.time_wrap table {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-left: 0;
+}
+table, td {
+    border-spacing: 0px;
+    padding: 0px;
+}
+.time_wrap table tr td {
+    padding: 10px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+tr.bg td{
+    background: rgba(0,0,0,0.1);
+}
+
 /* footer */
 
 footer{

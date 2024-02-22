@@ -138,8 +138,13 @@
     .f_logo{
         margin-top: 5rem;
     }
-
-
+    /* 비급여 */
+    .time_wrap table {
+        font-size: 1.2rem;
+    }
+    .time_wrap table tr td {
+        padding: 8px 2px;
+    }
 
 
 
