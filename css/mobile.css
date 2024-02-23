@@ -13,7 +13,6 @@
     /* common */
     .content_inner{
         padding: 70px 0;
-      
     }
     .content h4 {
         margin-bottom: 5rem;
@@ -38,6 +37,10 @@
     .main_banner .main_cover .introani.one{
         font-size: 1.6rem;
     }
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
     /* con1 */
     .con1 .content_inner .knowhow_txt {
         font-size: 2rem;
