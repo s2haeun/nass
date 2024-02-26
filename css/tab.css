@@ -9,7 +9,10 @@
     .header_inner{
         padding: 5px;
     }
-
+    /* popup */
+    .popup_wrap {
+        left: 0!important;
+    }
     /* common */
     .bg_wrap.bluebg::before {
         display: none;
