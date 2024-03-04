@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css?a">
     <link rel="stylesheet" href="./css/sub.css">
     <link rel="stylesheet" href="./css/tab.css">
     <link rel="stylesheet" href="./css/mobile.css">
@@ -42,6 +42,7 @@
 <body>
     <div class="wrap">
         <div id="header-placeholder"></div>
+        <div id="quick-placeholder"></div>
         <main>
             <!-- 서브배너 -->
             <div class="sub_banner">
@@ -111,14 +112,82 @@
                                 </p>
                             </div>
                         </div>
-                        
+                    </div>
+                    <div class="docter_bg">
+                        <div class="doctor_history inner" data-aos="fade-up">
+                            <h5> 논문</h5>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <b>Trans-Olecranon Fracture-Dislocations of the Elbow: A Systematic Review</b>
+                                        Chul-Hyun Cho, Du-Han Kim, Sang Soo Na, Byung-Chan Choi, Beom-Soo Kim<br>
+                                        Diagnostics (Basel). 2020 Dec 6;10(12):1058. doi: 10.3390/diagnostics10121058.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <b>Incidence, characteristics, and risk factors of venous thromboembolism in shoulder arthroplasty-a systematic review</b> 
+                                        Sang-Soo Na, Du-Han Kim, Byung-Chan Choi, Chul-Hyun Cho    <br>
+                                        Int Orthop. 2022 Sep;46(9):2081-2088. doi: 10.1007/s00264-022-05496-w. Epub 2022 Jun 28.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <b>Outcomes and complications after arthroplasty in patients with osteonecrosis of humeral head- systematic review</b> 
+                                        Sang-Soo Na, Du-Han Kim, Byung-Chan Choi, Chul-Hyun Cho     <br>
+                                        J Orthop Sci. 2022 Apr 28;S0949-2658(22)00082-3. doi: 10.1016/j.jos.2022.04.002.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <b>Chronicity is associated with the glenohumeral synovitis in patients with a rotator cuff tear</b>
+                                        Du-Han Kim, Ki-Cheor Bae, Jung-Hoon Choi, Sang-Soo Na, Ilseon Hwang, Chul-Hyun Cho      <br>
+                                        J Orthop Res. 2021 Oct;39(10):2226-2233. doi: 10.1002/jor.24941. Epub 2020 Dec 16.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <b>Complications Related to Latarjet Shoulder Stabilization: A Systematic Review</b>     
+                                        Chul-Hyun Cho, Sang Soo Na, Byung-Chan Choi, Du-Han Kim<br>      
+                                        Am J Sports Med. 2023 Jan;51(1):263-270. doi: 10.1177/03635465211042314. Epub 2021 Oct 11.  
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <b>Bilateral acromial stress fractures in a patient with a massive rotator cuff tear</b>
+                                        Du-Han Kim, Sang-Soo Na, Chung-Sin Baek, Chul-Hyun Cho     <br>
+                                        Clin Shoulder Elb. 2020 May 14;23(2):105-108. doi: 10.5397/cise.2020.00080. eCollection 2020 Jun.
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div>
+                                        <b>Is Routine Screening Using Duplex Ultrasonography for Deep Vein Thrombosis Necessary after Shoulder Arthroplasty?</b>     
+                                        Du-Han Kim, Sang-Soo Na, Ui-Jun Park, Chul-Hyun Cho      <br>
+                                        Diagnostics (Basel). 2023 Feb 8;13(4):636. doi: 10.3390/diagnostics13040636.
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div>
+                                        <b>Is Acromial Fracture after Reverse Total Shoulder Arthroplasty a Negligible Complication?: A Systematic Review</b>   
+                                        Chul-Hyun Cho, Jae-Won Jung, Sang-Soo Na, Ki-Cheor Bae, Kyung-Jae Lee, Du-Han Kim      <br>
+                                        Clin Orthop Surg. 2019 Dec;11(4):427-435. doi: 10.4055/cios.2019.11.4.427. Epub 2019 Nov 12.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <b>Acute Displaced Fracture of Lateral Acromion after Reverse Shoulder Arthroplasty: A Case Report and Surgical Technique</b>
+                                        Chul-Hyun Cho, Jae-Won Jung, Young-Jae Lim, Sang-Soo Na, Du-Han Kim      <br>
+                                        Clin Shoulder Elb. 2019 Jun 1;22(2):106-109. doi: 10.5397/cise.2019.22.2.106. eCollection 2019 Jun.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             
         </main>
         <div id="footer-placeholder"></div>
-       
     </div>
     <script>
         // aos 초기화
@@ -131,44 +200,53 @@
             .then(response => response.text())
             .then(html => {
                 document.getElementById('header-placeholder').innerHTML = html;
-    
+
                 // 헤더를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
                 // 예시: 메뉴 토글 등의 기능 초기화
                 // 모바일 메뉴 열기
-                $(".open_menu").click(function(){
-                    // alert("!!")
+                $(".open_menu").click(function(event){
+                    event.stopPropagation();
                     $(".hidden_bg").addClass("on");
-                })
+                });
+
                 // 모바일 메뉴 닫기
-                $(".close_menu").click(function(){
+                $(".close_menu").click(function(event){
+                    event.stopPropagation();
                     $(".hidden_bg").removeClass("on");
-                })
+                });
 
                 // 모바일 메뉴 토글
-                $(".hidden_gnb>li").click(function() {
+                $(".hidden_gnb>li").click(function(event) {
+                    event.stopPropagation();
                     // 클릭된 메뉴의 하위 메뉴 토글
                     $(this).find('.top_0').slideToggle();
 
                     // 다른 메뉴의 하위 메뉴 닫기
                     $(".hidden_gnb>li").not(this).find('.top_0').slideUp();
-                    // 
-                    $(".hidden_gnb>li>a").removeClass("on")
+                    
+                    // 현재 메뉴 활성화 표시
+                    $(".hidden_gnb>li>a").removeClass("on");
                     $(this).children('a').addClass("on");
-
                 });
             });
-    
+
         fetch('footer.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footer-placeholder').innerHTML = html;
-    
+
                 // 푸터를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
                 // 예시: 스크롤 이벤트 등의 기능 초기화
                 window.addEventListener('scroll', function() {
                     console.log('스크롤 이벤트 발생');
                 });
             });
+            fetch('quick.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('quick-placeholder').innerHTML = html;
+
+        });
     </script>
 </body>
 </html>

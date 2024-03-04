@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css?a">
     <link rel="stylesheet" href="./css/sub.css">
     <link rel="stylesheet" href="./css/tab.css">
     <link rel="stylesheet" href="./css/mobile.css">
@@ -42,6 +42,7 @@
 <body>
     <div class="wrap">
         <div id="header-placeholder"></div>
+        <div id="quick-placeholder"></div>
         <main>
             <!-- 서브배너 -->
             <div class="sub_banner">
@@ -104,8 +105,7 @@
             </div>
             
         </main>
-        <div id="footer-placeholder"></div>
-       
+        <div id="footer-placeholder"></div>  
     </div>
     <script>
         // aos 초기화
@@ -118,44 +118,53 @@
             .then(response => response.text())
             .then(html => {
                 document.getElementById('header-placeholder').innerHTML = html;
-    
+
                 // 헤더를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
                 // 예시: 메뉴 토글 등의 기능 초기화
                 // 모바일 메뉴 열기
-                $(".open_menu").click(function(){
-                    // alert("!!")
+                $(".open_menu").click(function(event){
+                    event.stopPropagation();
                     $(".hidden_bg").addClass("on");
-                })
+                });
+
                 // 모바일 메뉴 닫기
-                $(".close_menu").click(function(){
+                $(".close_menu").click(function(event){
+                    event.stopPropagation();
                     $(".hidden_bg").removeClass("on");
-                })
+                });
 
                 // 모바일 메뉴 토글
-                $(".hidden_gnb>li").click(function() {
+                $(".hidden_gnb>li").click(function(event) {
+                    event.stopPropagation();
                     // 클릭된 메뉴의 하위 메뉴 토글
                     $(this).find('.top_0').slideToggle();
 
                     // 다른 메뉴의 하위 메뉴 닫기
                     $(".hidden_gnb>li").not(this).find('.top_0').slideUp();
-                    // 
-                    $(".hidden_gnb>li>a").removeClass("on")
+                    
+                    // 현재 메뉴 활성화 표시
+                    $(".hidden_gnb>li>a").removeClass("on");
                     $(this).children('a').addClass("on");
-
                 });
             });
-    
+
         fetch('footer.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footer-placeholder').innerHTML = html;
-    
+
                 // 푸터를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
                 // 예시: 스크롤 이벤트 등의 기능 초기화
                 window.addEventListener('scroll', function() {
                     console.log('스크롤 이벤트 발생');
                 });
             });
+            fetch('quick.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('quick-placeholder').innerHTML = html;
+
+        });
     </script>
 </body>
 </html>

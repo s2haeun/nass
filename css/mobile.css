@@ -30,6 +30,54 @@
     .popup_wrap {
         left: 0!important;
     }
+    /* quick */
+    .quick ul li a {
+        padding: 1.5rem;
+    }
+    .quick img{
+        max-width: 30px;
+    }
+    /* banner */
+    .main_banner1 ul{
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .main_banner1 .li_wrap p {
+        /* display: none; */
+    }
+    .banner1_tit i {
+        font-size: 1.6rem;
+    }
+    .main_banner1 .li_wrap {
+        padding: 1rem 1rem;
+    }
+    .li_wrap img{display: none;}
+    .banner1_tit h3 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    .main_banner1 .li_wrap h6 {
+        font-size: 2.1rem;
+    }
+    .main_banner1 .li_wrap h6 {
+        margin: 1rem 0;
+    }
+    .banner1_tit p {
+        font-size: 1.6rem;
+    }
+    .main_banner1 .banner1_p {
+        font-size: 1.8rem;
+    }
+    .banner2_tit h3 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    .banner2_tit h3 strong {
+        font-size: 4rem;
+    }
+    .banner2_tit p {
+        font-size: 1.8rem;
+    }
     /* main */
     .main_banner .main_cover h1 {
         margin-bottom: 3rem ;
@@ -89,6 +137,27 @@
         padding-top: 80px;
         margin-bottom: 5rem;
     }
+    .doctor_wrap .txt_wrap p:first-of-type {
+        font-size: 1.8rem;
+        margin: 30px 0 10px;
+    }
+    .doctor_name b {
+        font-size: 3.5rem;
+    }
+    .doctor_name i {
+        font-size: 1.8rem;
+    }
+    .doctor_history>ul {
+        margin-top: 1.2rem;
+        font-size: 1.6rem;
+    }
+    .doctor_wrap .txt_wrap p:last-of-type {
+        margin-bottom: 0rem;
+    }
+    .txt_wrap p:last-of-type {
+        font-size: 1.7rem;
+    }
+
     /* 병원소개 */
     .tab_list .tab_list_inner ul a {
         line-height: 50px;

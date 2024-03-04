@@ -25,10 +25,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css?a">
     <link rel="stylesheet" href="./css/tab.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./font/font.css">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./js/main.js"></script>
@@ -46,8 +47,10 @@
 <body>
     <div class="wrap">
         <div id="header-placeholder"></div>
+        <!-- quick -->
+        <div id="quick-placeholder"></div>
         <!-- 팝업 -->
-        <div id="popup_1" class="popup_wrap popup_num">
+        <div id="popup_1" class="popup_wrap popup_num introani">
             <div class="popup">
                 <a id="popup_link" href="#">
                     <img id="popup_image" src="./img/팝업_100대명의.jpg">
@@ -65,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <div id="popup_2" class="popup_wrap popup_num">
+        <div id="popup_2" class="popup_wrap popup_num introani">
             <div class="popup">
                 <a id="popup_link" href="#">
                     <img id="popup_image" src="./img/팝업_굿닥터100인.jpg">
@@ -83,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div id="popup_3" class="popup_wrap popup_num">
+        <div id="popup_3" class="popup_wrap popup_num introani">
             <div class="popup">
                 <a id="popup_link" href="#">
                     <img id="popup_image" src="./img/팝업_스마트ct.jpg">
@@ -101,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div id="popup_4" class="popup_wrap popup_num">
+        <div id="popup_4" class="popup_wrap popup_num introani">
             <div class="popup">
                 <a id="popup_link" href="#">
                     <img id="popup_image" src="./img/팝업_일요일진료.jpg">
@@ -119,23 +122,126 @@
                 </div>
             </div>
         </div>
+        <div id="popup_5" class="popup_wrap popup_num introani">
+            <div class="popup">
+                <a id="popup_link" href="#">
+                    <img id="popup_image" src="./img/3월_나스정형외과.png">
+                </a>
+            </div>
+            <div class="popup_foot">
+                <div>
+                    <label for="chkbox4">
+                        <span>
+                            <input type="checkbox" value="checkbox" name="chkbox4" id="chkbox4">
+                            오늘 하루동안 보지 않기
+                        </span>
+                    </label>
+                    <span class="popup_close">닫기 X</span>
+                </div>
+            </div>
+        </div>
         <main>
             <!-- 메인배너 -->
             <div class="main_station swiper">
                 <ul class="swiper-wrapper train">
                     <li class="swiper-slide train_item">
-                        <div class="main_banner">
+                        <div class="main_banner1">
+                            <div class="main_cover">
+                                <div class="banner1_tit introani">
+                                    <i>NASS ORTHOPEDICS CLINIC</i>
+                                    <h3>
+                                        서울대학교 교수 출신<br>정형외과 전문의의 제대로 된 치료! 
+                                    </h3>
+                                    <p>
+                                        <em>나</em>스 정형외과에서 치료받으면 <em>나</em>아서 집에 갈 수 있습니다!  
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="li_wrap introani">
+                                            <img src="./img/banner1_icon1.png" alt="서울대학교 교수 출신">
+                                            <h6>서울대학교 교수 출신</h6>
+                                            <p>
+                                                척추 세부 분과 전문의<br>
+                                                견관절 임상조교수<br>
+                                                출신 대표원장 1:1 직접진료!  
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li_wrap introani">
+                                            <img src="./img/banner1_icon2.png" alt="대학병원 급 치료 기계 도입">
+                                            <h6>대학병원 급 치료 기계 도입</h6>
+                                            <p>
+                                                저선량, 저방사선 노출 CT<br>
+                                                스톨즈 체외충격파<br>
+                                                신장분사 크라이오(Cryo) 보유  
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li_wrap introani">
+                                            <img src="./img/banner1_icon3.png" alt="최신 시술로 척추관절 통증 완화">
+                                            <h6>최신 시술로 척추관절 통증 완화</h6>
+                                            <p>
+                                                신경성형술<br>
+                                                무릎줄기세포주사<br>
+                                                최신 기술 도입! 
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="banner1_p introani">
+                                    <strong>국내 유일 특급 호텔수준의 입원실</strong>을 보유한 정형외과 의원
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide train_item">
+                        <div class="main_banner2">
                             <div class="main_cover">
                                 <h1><img src="./img/main_bg_logo.png" alt="나스정형외과 로고"></h1>
-                                <p class="introani">
-                                    <i>검사부터 치료까지</i>
-                                    <span>원스톱치료</span>
-                                </p>
-                                <p class="one introani">
-                                    <span> 10년 이상 척추 / 어깨 관절을 치료한<br class="mobile"> 서울대 교수 출신</span>의<br>
-                                    척추 분과 전문의가  여러분의 검사부터 치료까지<br>
-                                    원스톱으로치료합니다.
-                                </p>
+                                <div class="banner2_tit">
+                                    <h3 class="introani">
+                                        효과 빠른<br><strong>척추신경성형술</strong>
+                                    </h3>
+                                    <p class="introani">
+                                        <em>수술이 두려운 환자분들</em>을 위한 요추치료법,<br>
+                                        척추 통증을 효과 빠르게 완화합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide train_item">
+                        <div class="main_banner2 main_banner3">
+                            <div class="main_cover">
+                                <h1><img src="./img/main_bg_logo.png" alt="나스정형외과 로고"></h1>
+                                <div class="banner2_tit">
+                                    <h3 class="introani">
+                                        관절 통증 끝<br><strong>무릎줄기세포주사</strong>
+                                    </h3>
+                                    <p class="introani">
+                                        <em>우리 동네 통증 주치의</em>대표원장이 직접 치료하여<br>
+                                        무릎 관절 통증과염증을 해결해 드립니다.  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide train_item">
+                        <div class="main_banner2 main_banner4">
+                            <div class="main_cover">
+                                <h1><img src="./img/main_bg_logo.png" alt="나스정형외과 로고"></h1>
+                                <div class="banner2_tit">
+                                    <h3 class="introani">
+                                        짧은 회복엔<br><strong>낮병동 입원</strong>
+                                    </h3>
+                                    <p class="introani">
+                                        <em>프라이빗한 개인 2인 입원실</em>에서<br>
+                                        빠른 회복과 조기귀가가 가능합니다.  
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -463,44 +569,67 @@
             .then(response => response.text())
             .then(html => {
                 document.getElementById('header-placeholder').innerHTML = html;
-    
+
                 // 헤더를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
                 // 예시: 메뉴 토글 등의 기능 초기화
                 // 모바일 메뉴 열기
-                $(".open_menu").click(function(){
-                    // alert("!!")
+                $(".open_menu").click(function(event){
+                    event.stopPropagation();
                     $(".hidden_bg").addClass("on");
-                })
+                });
+
                 // 모바일 메뉴 닫기
-                $(".close_menu").click(function(){
+                $(".close_menu").click(function(event){
+                    event.stopPropagation();
                     $(".hidden_bg").removeClass("on");
-                })
+                });
 
                 // 모바일 메뉴 토글
-                $(".hidden_gnb>li").click(function() {
+                $(".hidden_gnb>li").click(function(event) {
+                    event.stopPropagation();
                     // 클릭된 메뉴의 하위 메뉴 토글
                     $(this).find('.top_0').slideToggle();
 
                     // 다른 메뉴의 하위 메뉴 닫기
                     $(".hidden_gnb>li").not(this).find('.top_0').slideUp();
-                    // 
-                    $(".hidden_gnb>li>a").removeClass("on")
+                    
+                    // 현재 메뉴 활성화 표시
+                    $(".hidden_gnb>li>a").removeClass("on");
                     $(this).children('a').addClass("on");
-
                 });
             });
-    
+
         fetch('footer.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footer-placeholder').innerHTML = html;
-    
+
                 // 푸터를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
                 // 예시: 스크롤 이벤트 등의 기능 초기화
                 window.addEventListener('scroll', function() {
                     console.log('스크롤 이벤트 발생');
                 });
             });
+        
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer-placeholder').innerHTML = html;
+
+            // 푸터를 불러온 후에 실행되어야 하는 JavaScript 코드 추가
+            // 예시: 스크롤 이벤트 등의 기능 초기화
+            window.addEventListener('scroll', function() {
+                console.log('스크롤 이벤트 발생');
+            });
+        });
+
+        fetch('quick.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('quick-placeholder').innerHTML = html;
+
+        });
+        
     </script>
 </body>
 </html>

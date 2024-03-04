@@ -1,0 +1,46 @@
+/* 프리텐다드 */
+/* 900 */
+@font-face {
+    font-family: "Pretendard-Black";
+    src: url(./pretendard/Pretendard-Black.woff);
+}
+/* 800 */
+@font-face {
+    font-family: "Pretendard-ExtraBold";
+    src: url(./pretendard/Pretendard-ExtraBold.woff);
+}
+/* 700 */
+@font-face {
+    font-family: "Pretendard-Bold";
+    src: url(./pretendard/Pretendard-Bold.woff);
+}
+/* 600 */
+@font-face {
+    font-family: "Pretendard-SemiBold";
+    src: url(./pretendard/Pretendard-SemiBold.woff);
+}
+/* 500 */
+@font-face {
+    font-family: "Pretendard-Medium";
+    src: url(./pretendard/Pretendard-Medium.woff);
+}
+/* 400 */
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url(./pretendard/Pretendard-Regular.woff);
+}
+/* 300 */
+@font-face {
+    font-family: "Pretendard-Light";
+    src: url(./pretendard/Pretendard-Light.woff);
+}
+/* 200 */
+@font-face {
+    font-family: "Pretendard-ExtraLight";
+    src: url(./pretendard/Pretendard-ExtraLight.woff);
+}
+/* 100 */
+@font-face {
+    font-family: "Pretendard-Thin";
+    src: url(./pretendard/Pretendard-Thin.woff);
+}

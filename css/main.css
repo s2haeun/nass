@@ -240,7 +240,8 @@ header .header_inner{
 }
 /* popup */
 .popup_wrap {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     position: fixed;
     top: 0;
     left: 0;
@@ -249,16 +250,19 @@ header .header_inner{
     z-index: 9999;
 }
 .popup_wrap#popup_1 {
-    left: 0;
+    left: 450px;
 }
 .popup_wrap#popup_2 {
     left: 450px;
 }
 .popup_wrap#popup_3 {
-    left: 900px;
+    left: 0;
 }
 .popup_wrap#popup_4 {
-    left: 1350px;
+    left: 0;
+}
+.popup_wrap#popup_5 {
+    left: 900px;
 }
 .popup_foot {
     padding: 10px;
@@ -277,6 +281,46 @@ header .header_inner{
 .popup_close{
     cursor: pointer;
 }
+.popup_wrap.introani{
+    animation: introanimation .8s forwards ease;
+}
+/* quick */
+#quick-placeholder{
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    z-index: 9999999;
+}
+#quick-placeholder ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap */
+}
+#quick-placeholder ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff85;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 2rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    /* opacity: 0.7; */
+    transition: all .5s ;
+}
+#quick-placeholder ul li:nth-of-type(1):hover a{
+    background: #fae1007e;
+
+}
+#quick-placeholder img{
+    max-width: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* banner */
 .main_station{
     height: 100vh;
@@ -287,6 +331,27 @@ header .header_inner{
     width: 100%;
     background: url(../img/main_bg.jpg) no-repeat center /cover;
 }
+.main_banner1{
+    height: 100%;
+    width: 100%;
+    background: url(../img/swiper_bg1.jpg) no-repeat center /cover;
+}
+.main_banner2{
+    height: 100%;
+    width: 100%;
+    background: url(../img/swiper_bg2.jpg) no-repeat center /cover;
+}
+.main_banner2.main_banner3{
+    height: 100%;
+    width: 100%;
+    background: url(../img/swiper_bg3.jpg) no-repeat center /cover;
+}
+.main_banner2.main_banner4{
+    height: 100%;
+    width: 100%;
+    background: url(../img/exploration_2.jpg) no-repeat center /cover;
+}
+
 .main_cover{
     height: 100%;
     width: 100%;
@@ -321,6 +386,99 @@ header .header_inner{
     0%{opacity: 0;transform: scale(0.5);}
     100%{opacity: 1;transform: scale(1);}
 }
+/* main_banner1 */
+.main_banner1{
+    color: #505050;
+    text-align: center;
+}
+.main_banner1 .main_cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner1_tit i{
+    font-family: "Pretendard-Regular";
+    font-size: 2.5rem;
+}
+.banner1_tit h3{
+    font-family: "Pretendard-Bold";
+    font-size: 6rem;
+    margin: 1rem 0 3rem;
+}
+.banner1_tit p{
+    font-family: "Pretendard-Regular";
+    font-size: 4rem;
+    width: 100%;
+}
+.banner1_tit em{
+    font-family: "Pretendard-Bold";
+}
+.main_banner1 ul{
+    width: 100%;
+    /* max-width: 1280px; */
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin: 6rem 0;
+}
+.main_banner1 .li_wrap{
+    padding:6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_banner1 li{
+    flex: 1;
+}
+.main_banner1 ul li:nth-of-type(1){
+    background: rgba(48, 62, 72, 0.95);
+}
+.main_banner1 ul li:nth-of-type(2){
+    background: rgba(70, 89, 103, 0.95);
+}
+.main_banner1 ul li:nth-of-type(3){
+    background: rgba(102, 139, 166, 0.95);
+}
+.main_banner1 .li_wrap h6{
+    font-size: 3.5rem;
+    font-family: "Pretendard-Bold";
+    margin: 2rem 0;
+}
+.main_banner1 .li_wrap p{
+    font-size: 2rem;
+    font-family: "Pretendard-Regular";
+}
+.main_banner1 .banner1_p{
+    opacity: 0;
+    font-size: 4rem;
+    font-family: "Pretendard-Regular";
+}
+.main_banner1 .banner1_p strong{
+    font-family: "Pretendard-Bold";
+    color: #54728a;
+}
+.banner2_tit{
+    color: #505050;
+    font-family: "Pretendard-Light";
+    text-align: center;
+}
+.banner2_tit h3{
+    font-size: 7rem;
+}
+.banner2_tit h3 strong{
+    font-family: "Pretendard-Bold";
+    font-size: 10rem;
+}
+.banner2_tit p{
+    font-size: 4.5rem;
+    width: 100%;
+}
+.banner2_tit p em{
+    font-family: "Pretendard-Bold";
+}
+
+
+/*  */
 /* swiper */
 .main_station .swiper-pagination-bullet-active {
     /* opacity: var(--swiper-pagination-bullet-opacity, 1); */

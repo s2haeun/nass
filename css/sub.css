@@ -273,6 +273,29 @@
     font-size:2.1rem ;
     line-height: 3.9rem;
 }
+.docter_bg{
+    background: #e3e3e3;
+}
+.doctor_history.inner{
+    max-width: 1280px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.doctor_history.inner h5{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 3rem;
+}
+.doctor_history.inner li{
+    margin-bottom: 2rem;
+}
+.doctor_history.inner li b{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
 /* 신경성형술 */
 .pen.con_wrap{
     margin-bottom: 7rem;

@@ -17,6 +17,37 @@
     .bg_wrap.bluebg::before {
         display: none;
     }
+    /* banner */
+    .banner1_tit i{
+        font-size: 2rem;
+    }
+    .banner1_tit h3{
+        font-size: 3.5rem;
+    }
+    .banner1_tit p{
+        font-size: 2.5rem;
+    }
+    .main_banner1 .li_wrap h6{
+        font-size: 2.5rem;
+    }
+    .main_banner1 .li_wrap p{
+        font-size: 1.7rem;
+    }
+    .main_banner1 .banner1_p{
+        font-size: 2.5rem;
+    }
+    
+
+    .banner2_tit h3 {
+        font-size: 4rem;
+    }
+    .banner2_tit h3 strong {
+        font-size: 6rem;
+    }
+    .banner2_tit p {
+        font-size: 2.7rem;
+        width: 100%;
+    }
     /* con2 */
     .con2 .content_inner .nonsurgical {
         flex-direction: column;
